@@ -8,14 +8,18 @@ import Error from "./pages/Error";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
+import NavBar from "./components/NavBar";
 function App() {
   return (
     <div>
-      <Route exact path="/" component={Home}></Route>
-      <Route path="/single-room" component={SingleRoom}></Route>
-      <Route exact path="/rooms" component={Rooms}></Route>
-
-      <Route exact path="/error" component={Error}></Route>
+      <NavBar></NavBar>
+      <Switch>
+        <Route exact path="/" component={Home}></Route>
+        <Route path="/rooms/:slug" component={SingleRoom}></Route>
+        <Route exact path="/rooms" component={Rooms}></Route>
+        {/* When no path matches then Error page will show  */}
+        <Route component={Error}></Route>
+      </Switch>
     </div>
   );
 }
