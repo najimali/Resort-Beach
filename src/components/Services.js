@@ -18,13 +18,13 @@ export default class Services extends Component {
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ut iste aperiam. Ipsam reprehenderit reiciendis",
       },
       {
-        icon: <FaCocktail />,
+        icon: <FaShuttleVan />,
         title: "Free Shuttle",
         info:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ut iste aperiam. Ipsam reprehenderit reiciendis",
       },
       {
-        icon: <FaCocktail />,
+        icon: <FaBeer />,
         title: "Strong Beer",
         info:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ut iste aperiam. Ipsam reprehenderit reiciendis",

@@ -35,3 +35,29 @@ eg
 `<Switch> <Route path="/:id" children={<Child />} /> </Switch> let {id } = useParams(); `
 
 [more details](https://reactrouter.com/web/example/url-params)
+
+### Context API [docs](https://reactjs.org/docs/context.html)
+
+Context provides a way to pass data through the component tree without having to pass props down manually at every level.
+
+**Diagram**
+![alt context picture](./images/Contex.png)
+
+As you can see in the daigram above App Component is passinf user naem & it is to be only used by Component A,D, F but Problem we face in react is to pass the value from higher level to lower level we need to pass props at each level(or props drilling ).So to avoid props drilling we use context api so that we can consume our props at the level we want.
+
+**Note -**
+
+1. Component can only be consumed value if its parent component is provider.
+2. Wrap the **Root Component**( generally it is App Component) with the Context Provider so that any component can be consumed value form context provider.
+
+i.e `<RoomProvider> <Router> <App></App> </Router> </RoomProvider>`
+**Steps**
+
+1. Create a Context
+   `const MyContext = React.createContext(defaultValue);`
+2. Provide a context value
+   `<MyContext.Provider value={/* some value */}>`
+3. Consume the context value
+   `<UserConsumer> {username => { return <div>Hello {username}</div> }} </UserConsumer>`
+
+#### [Watch the explanation](https://www.youtube.com/watch?v=j3j8St50fNY)
