@@ -1,7 +1,10 @@
 * {
+  list-style: none;
+  outline: none;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 :root {
@@ -11,7 +14,7 @@
   --mainBlack: #222;
   --mainGrey: #ececec;
   --darkGrey: #cfcfcf;
-  --mainTransition: all 0.3s linear;
+  --mainTransition: all 0.25s linear;
   --mainSpacing: 3px;
   --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
   --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
