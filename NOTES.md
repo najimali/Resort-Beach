@@ -117,4 +117,22 @@ Motive to use style component is to make dynamic image background in the single 
 `const StyledHero = styled.component_name`
 
 passing props in style component is `props=>props.props_name`
+
 `background: url(${(props) => props.img}) center/cover no-repeat;`
+
+### Higher Order Components [Docs](https://reactjs.org/docs/higher-order-components.html)
+
+When two or more different component have the similar functionality then instead of creating duplicate code we
+create a higher order component then pass original component in it.
+
+In short to share common functionality between components we use higher order component.
+
+HOC - A pattern where a fubction takes a component as an argument and returns a new component
+
+`const NewComponent = higherOrderComponent(OriginialComponent);`
+
+or
+
+`const IronMan = withSuit(TonyStark);`
+
+### [Watch Explantion](https://www.youtube.com/watch?v=rsBQj6X7UK8&t=4s)
