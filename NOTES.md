@@ -110,7 +110,7 @@ constructor() -> static getDerivedStateFromProps()->render() (& all its children
 
 ### Style Component [Docs](https://styled-components.com/)
 
-Motive to use style component is to make dynamic image background in the single room
+The motive to use style component is to make dynamic image background in the single room
 
 `import styled from "styled-components";`
 
@@ -125,9 +125,9 @@ passing props in style component is `props=>props.props_name`
 When two or more different component have the similar functionality then instead of creating duplicate code we
 create a higher order component then pass original component in it.
 
-In short to share common functionality between components we use higher order component.
+In short to share common functionality between components we use higher-order components.
 
-HOC - A pattern where a fubction takes a component as an argument and returns a new component
+HOC - A pattern where a function takes a component as an argument and returns a new component
 
 `const NewComponent = higherOrderComponent(OriginialComponent);`
 

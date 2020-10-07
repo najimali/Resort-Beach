@@ -6,7 +6,7 @@ import SingleRoom from "./pages/SingleRoom";
 import Rooms from "./pages/Rooms";
 import Error from "./pages/Error";
 
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 
 import NavBar from "./components/NavBar";
 function App() {
