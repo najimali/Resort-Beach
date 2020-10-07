@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import items from "./data";
+// import items from "./data";
 import Client from "./Contentful";
 const RoomContext = React.createContext();
 class RoomProvider extends Component {
@@ -48,7 +48,7 @@ class RoomProvider extends Component {
     }
   };
   componentDidMount() {
-    //this.getData();
+    this.getData();
     // let rooms = this.formatData(items);
     // let featuredRooms = rooms.filter((room) => room.featured === true);
     // let maxPrice = Math.max(...rooms.map((item) => item.price));
